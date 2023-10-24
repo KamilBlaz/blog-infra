@@ -21,11 +21,13 @@ terraform {
 provider "cloudflare" {
   api_token = var.cloudflare_api_token
 }
-resource "cloudflare_account" "this" {
-  name              = "Blusik999@outlook.com"
-  type              = "standard"
-  enforce_twofactor = true
-}
+
+
+#resource "cloudflare_account" "this" {
+#  name              = "Blusik999@outlook.com"
+#  type              = "standard"
+#  enforce_twofactor = true
+#}
 
 ## TO DO import infrastructure
 
