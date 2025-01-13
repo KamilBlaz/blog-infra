@@ -24,7 +24,13 @@ variable "encrypt" {
 variable "cloudflare_api_token" {
   description = "Cloudflare API token (taken from docker-compose)"
   type        = string
+  sensitive   = true
 }
 
+variable "cloudflare_email" {
+  type = string
+}
 
-
+variable "cloudflare_account_id" {
+  type = string
+}
